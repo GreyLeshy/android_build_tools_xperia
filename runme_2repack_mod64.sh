@@ -54,7 +54,7 @@ if [ ! -e work/kernel.sin-ramdisk/${is_n} ]; then
 		sed -i -e "s@PLEASECHANGETHIS@$devicename_s@g" work/kernel.sin-ramdisk/bootrec/init.sh
 	fi
 else
-	cp -a tools/vendor/bin/bootimg work/kernel.sin-ramdisk/sbin/bootimg
+	cp -a tools/bootimg work/kernel.sin-ramdisk/sbin/bootimg
 	cp -a tools/vendor/bin/busybox work/kernel.sin-ramdisk/sbin/busybox
 	cp -a tools/vendor/bin/extract_elf_ramdisk work/kernel.sin-ramdisk/sbin/extract_elf_ramdisk
 	cp -a tools/init.hijack work/kernel.sin-ramdisk/init.hijack
