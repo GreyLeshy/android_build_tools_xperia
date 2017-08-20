@@ -1,1 +1,6 @@
 work
+kernel*.elf
+kernel*.ext4
+kernel*.bin
+kernel*.img
+ramdisk*.cpio.gz
